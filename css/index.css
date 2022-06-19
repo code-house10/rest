@@ -33,12 +33,15 @@ input:focus, textarea:focus, select:focus
 }
 #Layer1 .modal-content
 {
-   background-color: #000000;
-   background-image: none;
-   border: 1px solid #CCCCCC;
-   border-radius: 6px;
+   background-color: transparent;
+   background-image: url('../images/business-banner-10.jpg');
+   background-repeat: space;
+   background-position: center center;
+   background-attachment: scroll;
+   background-size: 100% 100%;
+   border: 4px solid #FFA500;
+   border-radius: 15px;
    box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
-   opacity: 0.90;
    margin: 0;
    overflow: visible;
 }
@@ -54,8 +57,8 @@ input:focus, textarea:focus, select:focus
    animation-duration: 500ms;
    -webkit-animation-fill-mode: both;
    animation-fill-mode: both;
-   -webkit-animation-name: transform-bounce;
-   animation-name: transform-bounce;
+   -webkit-animation-name: transform-scale-in;
+   animation-name: transform-scale-in;
 }
 #Layer1 .animate-hide
 {
@@ -63,8 +66,8 @@ input:focus, textarea:focus, select:focus
    animation-duration: 500ms;
    -webkit-animation-fill-mode: both;
    animation-fill-mode: both;
-   -webkit-animation-name: transform-bounce;
-   animation-name: transform-bounce;
+   -webkit-animation-name: transform-scale-in;
+   animation-name: transform-scale-in;
    -webkit-animation-direction: reverse;
    animation-direction: reverse;
 }
@@ -93,7 +96,7 @@ input:focus, textarea:focus, select:focus
 #Layer1 .modal-dialog
 {
    position: relative;
-   width: 501px;
+   width: 456px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -108,18 +111,18 @@ input:focus, textarea:focus, select:focus
 {
    min-height: 16px;
    padding: 15px 15px 15px 15px;
-   border-bottom: 1px solid #CCCCCC;
+   border-bottom: 1px solid #FFA500;
 }
 #Layer1 .modal-footer
 {
    padding: 15px 15px 15px 15px;
-   border-top: 1px solid #CCCCCC;
+   border-top: 1px solid #FFA500;
 }
 #Layer1 .modal-body
 {
    position: relative;
-   width: 501px;
-   height: 250px;
+   width: 456px;
+   height: 404px;
 }
 #Layer1 .close
 {
@@ -127,7 +130,7 @@ input:focus, textarea:focus, select:focus
    font-size: 21px;
    font-weight: 700;
    line-height: 1;
-   color: #CCCCCC;
+   color: #FFA500;
    text-shadow: 0px 1px 0px #fff;
    opacity: 0.5;
    -webkit-appearance: none;
@@ -168,7 +171,7 @@ input:focus, textarea:focus, select:focus
 }
 #Layer1 .modal-title
 {
-   color: #CCCCCC;
+   color: #FFA500;
    font-size: 16px;
    font-weight: 500;
    margin: 0;
@@ -186,47 +189,6 @@ input:focus, textarea:focus, select:focus
    height: calc(100vh);
    content: "";
 }
-#Shape1
-{
-   width: 291px;
-   height: 39px;
-   background-color: #FFA500;
-   background-image: none;
-   border: 0px #0963AD solid;
-   border-radius: 10px;
-}
-#Shape1_text
-{
-   position: absolute;
-   pointer-events: none;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-    left: 1.72%;
-   top: 12.82%;
-   width: 95.88%;
-   height: 69.23%;
-   box-sizing: border-box;
-   overflow: hidden;
-   text-align: center;
-   word-wrap: break-word;
-}
-#wb_Image1
-{
-   vertical-align: top;
-}
-#Image1
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
 #wb_IconFont1
 {
    background-color: transparent;
@@ -240,49 +202,31 @@ input:focus, textarea:focus, select:focus
 }
 #IconFont1
 {
-   height: 32px;
-   width: 56px;
+   height: 35px;
+   width: 30px;
 }
 #IconFont1 i
 {
-   color: #FFFFFF;
+   color: #FFA500;
    display: inline-block;
-   font-size: 32px;
-   line-height: 32px;
+   font-size: 30px;
+   line-height: 35px;
    vertical-align: middle;
-   width: 31px;
+   width: 29px;
 }
 #IconFont1:hover i
 {
-   color: #FFFFFF;
-}
-#wb_Shape1
-{
-   position: absolute;
-   left: 104px;
-   top: 105px;
-   width: 291px;
-   height: 39px;
-   z-index: 0;
-}
-#wb_Image1
-{
-   position: absolute;
-   left: 188px;
-   top: 13px;
-   width: 123px;
-   height: 111px;
-   z-index: 1;
+   color: #FFA500;
 }
 #wb_IconFont1
 {
    position: absolute;
-   left: 433px;
+   left: 401px;
    top: 13px;
-   width: 56px;
-   height: 32px;
+   width: 30px;
+   height: 35px;
    text-align: center;
-   z-index: 2;
+   z-index: 0;
 }
 #Layer1
 {
@@ -297,12 +241,12 @@ body
 }
 #Layer1 .modal-content
 {
-   visibility: hidden;
+   visibility: visible;
    margin: 0;
 }
 #Layer1 .modal-dialog
 {
-   width: 317px;
+   width: 299px;
 }
 #Layer1 .modal-content
 {
@@ -310,50 +254,15 @@ body
 }
 #Layer1 .modal-body
 {
-   width: 317px;
-   height: 220px;
-}
-#wb_Shape1
-{
-   left: 21px;
-   top: 91px;
-   width: 276px;
-   height: 39px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-}
-#Shape1
-{
-   width: 276px;
-   height: 39px;
-}
-#wb_Image1
-{
-   left: 100px;
-   top: 9px;
-   width: 118px;
-   height: 105px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#Timer1
-{
-   left: 28px;
-   top: 460px;
-   width: 34px;
-   height: 38px;
-   visibility: visible;
-   display: inline;
+   width: 299px;
+   height: 256px;
 }
 #wb_IconFont1
 {
-   left: 268px;
+   left: 254px;
    top: 13px;
-   width: 40px;
-   height: 24px;
+   width: 30px;
+   height: 35px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -361,13 +270,13 @@ body
 }
 #IconFont1
 {
-   width: 40px;
-   height: 24px;
+   width: 30px;
+   height: 35px;
 }
 #IconFont1 i
 {
-   line-height: 24px;
-   font-size: 24px;
-   width: 23px;
+   line-height: 35px;
+   font-size: 30px;
+   width: 29px;
 }
 }

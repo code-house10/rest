@@ -22,10 +22,10 @@
 
     <!-- Libraries Stylesheet -->
     
-    
-    <link href="css1/Untitled1.css" rel="stylesheet">
-<link href="css1/index.css" rel="stylesheet">
-<script src="jquery-3.6.0.min.js"></script>
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/Untitled1.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+   <script src="jquery-3.6.0.min.js"></script>
 <script src="util.min.js"></script>
 <script src="modal.min.js"></script>
 <script src="wwb17.min.js"></script>
@@ -44,9 +44,9 @@
          var forceReflow = element.offsetWidth;
          $('#Layer1 .modal-dialog').addClass('animate-hide');
       });
+      $("#Layer1").modal('show');
    });
 </script>
-    
     
     
     
@@ -105,38 +105,16 @@
     
     
     
-    
-    <div id="Layer1" class="modal fade" role="dialog">
+ <div id="Layer1" class="modal fade" role="dialog">
       <div class="modal-dialog modal-dialog-centered">
          <div class="modal-content">
             <div class="modal-body">
-               <div id="wb_Shape1">
-                  <div id="Shape1"><div id="Shape1_text"><div><span style="color:#FFFFFF;font-family:Changa;font-size:13px;"><strong>تصميم وتطوير كود هاوس لحلول البرمجة</strong></span></div></div></div></div>
-               <div id="wb_Image1">
-                  <img src="images/283036053_128215783172435_7369526661199742175_n.png" id="Image1" alt="" width="123" height="110"></div>
                <div id="wb_IconFont1">
-                  <a href="#" onclick="$('#Layer1').modal('hide');return false;"><div id="IconFont1"><i class="fa fa-times-circle"></i></div></a></div>
+                  <a href="#" onclick="$('#Layer1').modal('hide');return false;"><div id="IconFont1"><i class="fa fa-times"></i></div></a></div>
             </div>
          </div>
       </div>
    </div>
-   <script>   
-   var wb_Timer1;
-   function TimerStartTimer1()
-   {
-      wb_Timer1 = setTimeout(function()
-      {
-         var event = null;
-         $('#Layer1').modal('show');
-      }, 7000);
-   }
-   function TimerStopTimer1()
-   {
-      clearTimeout(wb_Timer1);
-   }
-   TimerStartTimer1();
-   </script>
-    
     
     
     
